@@ -1,0 +1,15 @@
+﻿  ns_core.c
+c:\users\cmcc\desktop\nspc\signal_processing\include\spl_inl.h(95): warning C4244: “return”: 从“int”转换到“Word16”，可能丢失数据
+ns_core.c(880): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+ns_core.c(883): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+ns_core.c(899): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+ns_core.c(902): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+ns_core.c(948): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+ns_core.c(951): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+ns_core.c(957): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  noise_suppression.c
+noise_suppression.c(30): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(346): note: 参见“strncpy”的声明
+  fft4g.c
+  正在生成代码...
+  Ns.vcxproj -> C:\Users\cmcc\Desktop\NsPc\Debug\Ns.lib
