@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ns", "Ns\Ns.vcxproj", "{158C1BF1-14B5-49A4-8F45-BBA96A333A41}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Signal_processing", "Signal_processing\Signal_processing.vcxproj", "{504C4778-7482-42E1-BA3D-15E77BF3ED2A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NsPc_test", "NsPc_test\NsPc_test.vcxproj", "{6875627D-90DD-4017-8D08-4979CC2706D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{158C1BF1-14B5-49A4-8F45-BBA96A333A41}.Debug|Win32.ActiveCfg = Debug|Win32
+		{158C1BF1-14B5-49A4-8F45-BBA96A333A41}.Debug|Win32.Build.0 = Debug|Win32
+		{158C1BF1-14B5-49A4-8F45-BBA96A333A41}.Release|Win32.ActiveCfg = Release|Win32
+		{158C1BF1-14B5-49A4-8F45-BBA96A333A41}.Release|Win32.Build.0 = Release|Win32
+		{504C4778-7482-42E1-BA3D-15E77BF3ED2A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{504C4778-7482-42E1-BA3D-15E77BF3ED2A}.Debug|Win32.Build.0 = Debug|Win32
+		{504C4778-7482-42E1-BA3D-15E77BF3ED2A}.Release|Win32.ActiveCfg = Release|Win32
+		{504C4778-7482-42E1-BA3D-15E77BF3ED2A}.Release|Win32.Build.0 = Release|Win32
+		{6875627D-90DD-4017-8D08-4979CC2706D5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6875627D-90DD-4017-8D08-4979CC2706D5}.Debug|Win32.Build.0 = Debug|Win32
+		{6875627D-90DD-4017-8D08-4979CC2706D5}.Release|Win32.ActiveCfg = Release|Win32
+		{6875627D-90DD-4017-8D08-4979CC2706D5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
