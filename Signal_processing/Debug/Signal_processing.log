@@ -1,0 +1,19 @@
+﻿  spl_sqrt_floor.c
+c:\users\cmcc\desktop\nspc\signal_processing\include\spl_inl.h(95): warning C4244: “return”: 从“int”转换到“Word16”，可能丢失数据
+  min_max_operations.c
+c:\users\cmcc\desktop\nspc\signal_processing\include\spl_inl.h(95): warning C4244: “return”: 从“int”转换到“Word16”，可能丢失数据
+  get_scaling_square.c
+c:\users\cmcc\desktop\nspc\signal_processing\include\spl_inl.h(95): warning C4244: “return”: 从“int”转换到“Word16”，可能丢失数据
+  energy.c
+c:\users\cmcc\desktop\nspc\signal_processing\include\spl_inl.h(95): warning C4244: “return”: 从“int”转换到“Word16”，可能丢失数据
+  division_operations.c
+c:\users\cmcc\desktop\nspc\signal_processing\include\spl_inl.h(95): warning C4244: “return”: 从“int”转换到“Word16”，可能丢失数据
+  copy_set_operations.c
+c:\users\cmcc\desktop\nspc\signal_processing\include\spl_inl.h(95): warning C4244: “return”: 从“int”转换到“Word16”，可能丢失数据
+  complex_fft.c
+c:\users\cmcc\desktop\nspc\signal_processing\include\spl_inl.h(95): warning C4244: “return”: 从“int”转换到“Word16”，可能丢失数据
+complex_fft.c(313): warning C4244: “函数”: 从“int”转换到“Word16”，可能丢失数据
+  complex_bit_reverse.c
+c:\users\cmcc\desktop\nspc\signal_processing\include\spl_inl.h(95): warning C4244: “return”: 从“int”转换到“Word16”，可能丢失数据
+  正在生成代码...
+  Signal_processing.vcxproj -> C:\Users\cmcc\Desktop\NsPc\Debug\Signal_processing.lib

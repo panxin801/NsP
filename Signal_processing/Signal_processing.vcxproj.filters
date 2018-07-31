@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="signal_processing">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="signal_processing\include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="complex_bit_reverse.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="complex_fft.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="copy_set_operations.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="division_operations.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="energy.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="get_scaling_square.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="min_max_operations.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="spl_sqrt_floor.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\signal_processing_library.h">
+      <Filter>signal_processing\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\spl_inl.h">
+      <Filter>signal_processing\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
