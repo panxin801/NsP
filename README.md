@@ -1,5 +1,5 @@
-#NsPc updates log  
-##Author:Xin Pan
+# NsPc updates log  
+## Author:Xin Pan
 ***
 This program build pass on Windows and edit by vs2015. Based on the original, I made the following updates:
 1. Add reading a .pcm file and save as a .wav file.  
