@@ -1,0 +1,2 @@
+﻿  NsPc_test.c
+c:\users\cmcc\desktop\nspc\nspc_test\NsPc_test.h(5): fatal error C1083: 无法打开包括文件: “noise_suppression.h”: No such file or directory

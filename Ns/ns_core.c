@@ -606,7 +606,7 @@ void Ns_ComputeSpectralDifference(NSinst_t* inst, float* magnIn) {
 //magn is the input magnitude spectrum
 //noise is the noise spectrum
 //snrLocPrior is the prior snr for each freq.
-//snr loc_post is the post snr for each freq.
+//snrLocPost is the post snr for each freq.
 void Ns_SpeechNoiseProb(NSinst_t* inst, float* probSpeechFinal, float* snrLocPrior,
                               float* snrLocPost) {
   int i, sgnMap;

@@ -2,12 +2,13 @@
 
 #define FS_FIX                      16000
 #define KSMAPLES_FIX                160
+#define WAV_HEADER					46
 
 int doProcess(char* arrTempRead, char* arrTempWrite)
 {
 	NsHandle* NsInst;
 	UWord32 fs = FS_FIX;
-	int mode = 3;
+	int mode = 2;
 	short speechFrame[160];
 	short* speechFrameHB = NULL;
 	short outFrame[160];
@@ -37,13 +38,13 @@ int doProcess(char* arrTempRead, char* arrTempWrite)
 	}
 
 	fAnsIn = fopen(arrTempRead, "rb");  // Input file
-	char chWavHeader[44] = { 0 };
+	char chWavHeader[WAV_HEADER] = { 0 };
 	if (fAnsIn == NULL)
 	{
 		printf("open %s is failed", "fAnsIn.pcm");
 		return -1;
 	}
-	fread(chWavHeader, sizeof(char), 44, fAnsIn); // Read header from input .wav files
+	fread(chWavHeader, sizeof(char), WAV_HEADER, fAnsIn); // Read header from input .wav files
 
 	fAnsOut = fopen(arrTempWrite, "wb"); // Write file
 	if (fAnsOut == NULL)
@@ -51,7 +52,7 @@ int doProcess(char* arrTempRead, char* arrTempWrite)
 		printf("open %s is failed", "fAnsOut.pcm");
 		return -1;
 	}
-	fwrite(chWavHeader, sizeof(char), 44, fAnsOut); // Write header into saveFile
+	fwrite(chWavHeader, sizeof(char), WAV_HEADER, fAnsOut); // Write header into saveFile
 
 	while (fread(speechFrame, 2, 160, fAnsIn) != 0)
 	{
@@ -75,12 +76,25 @@ int doProcess(char* arrTempRead, char* arrTempWrite)
 	return 1;
 }
 
-int main()
+int main(int argc, char* argv[])
+//int main()
 {
-	char* pIn = "E:\\test\\";
+	/*if (2 > (argc - 1))
+	{
+		printf("Too few params. Please check.\n");
+		return 1;
+	}
+	printf("%d\n", argc);
+	printf("%s\n", argv[1]);
+	printf("%s\n", argv[2]);*/
+
+
+	char* pIn = "E:\\test-noise\\";
+	/*char* pIn = argv[1];*/
 	char* pFilter = "*.wav"; // file filter
 	char arrFindIn[100]; // input path and filter name
-	char* pOut = "E:\\test-out\\";
+	char* pOut = "E:\\nspcout\\";
+	/*char* pOut = argv[2];*/
 	strcpy(arrFindIn, pIn);
 	strcat(arrFindIn, pFilter);
 
@@ -95,13 +109,13 @@ int main()
 		printf("file list:\n");
 		do
 		{
-			char arrTempRead[100]; // store each one of file
-			char arrTempWrite[100];
+			char arrTempRead[256]; // store each one of file
+			char arrTempWrite[256];
 			strcpy(arrTempRead, pIn);
 			strcat(arrTempRead, filedir.name);
 			strcpy(arrTempWrite, pOut);
 			strcat(arrTempWrite, filedir.name);
-			if (doProcess(arrTempRead,arrTempWrite))
+			if (doProcess(arrTempRead, arrTempWrite))
 			{
 				printf("%s read and write successful.\n", filedir.name);
 			}
@@ -114,6 +128,7 @@ int main()
 	}
 	_findclose(lfDir);
 
-	system("pause");
+	printf("All processing successed!\n");
+	//system("pause");
 	return 0;
 }
