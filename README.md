@@ -1,4 +1,4 @@
-#NsPc updates log
+# NsPc updates log
 Author:Xin Pan
 The program passed on Windows and edit by vs2015.
 ***
